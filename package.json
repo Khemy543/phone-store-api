@@ -1,0 +1,22 @@
+{
+  "name": "phones-store-api",
+  "version": "1.0.0",
+  "description": "phones store api",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "phones",
+    "ecommerce"
+  ],
+  "author": "Gideon Assafuah",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3",
+    "nodemon": "^2.0.15"
+  }
+}

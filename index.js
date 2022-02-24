@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const productRoute = require("./routes/phones");
+const productRoute = require("./routes/phone");
 
 // connect to mongodb
 mongoose
@@ -15,7 +15,10 @@ mongoose
   .then(() => console.log("Database connected!"))
   .catch((error) => console.log(error));
 
-app.use("/api", productRoute);
+  // Middleware
+app.use(express.json());
+
+app.use("/api/phone", productRoute);
 
 // listen to server
 app.listen(process.env.PORT || 5000, () => {
